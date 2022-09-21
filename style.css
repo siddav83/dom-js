@@ -7,3 +7,32 @@ ul {
 li {    
     padding: 10px;
 }
+h2:hover {
+    cursor: progress;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+}
+a:active {
+    font-size: 20px;
+}
+.changeStyleOnClickNavItem {
+    font-weight: bolder;
+    font-size:large;
+    color: green;
+}
+/* .changeSubHeaderStyleOnHover {
+    color: rgb(231,120,190,0.78);
+}
+.changeSubHeaderStyleOnHover1 {
+    color: rgb(231,80,0,0.6);
+} */
+.changebackgroundColor {
+    background-color: lightgray;
+}
