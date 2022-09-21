@@ -1,7 +1,15 @@
 const h1 = document.querySelector('h1');
-// console.log(h1)
 
+//Question 1
+// If a user clicks on the h1 tag, the background should change colour, if they move their mouse out of the space the background should return to the original colour.
+h1.addEventListener('mouseover',(e)=> {
+    e.target.style.color = 'red'
+    setTimeout(()=> {
+        e.target.style.color = ''
+    },1000)
+})
 
+//Question 2
 //hover on <h2> to change the innertext by greating
 const subHeaderTogreating = document.querySelector('h2');
 console.log("hello",subHeaderTogreating.innerHTML);
@@ -47,4 +55,12 @@ navbaritems.forEach(navBarItem => {
         // target.style.color = 'red';
         target.classList.toggle('changeStyleOnClickNavItem')
     })
+})
+
+// Question 3
+//If someone types a letter whilst viewing the webpage a new paragraph should be created and that letter should be added to it.
+const html = document.querySelector('html');
+console.log(html)
+html.addEventListener('keypress',(e)=> {
+    console.log(e,"pressed")
 })
